@@ -1,0 +1,40 @@
+div {
+	display: inline-block;
+	max-width: 1000px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+.darkblue {
+	background-color: white;
+	color: navy;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.fontSize {
+	font-size: 3em;
+}
+
+.background1 {
+	background-color: midnightblue;
+	color: white;
+}
+
+.background2 {
+	background-color: palevioletred;
+	color: white;
+}
+
+.fontDec {
+	font-family: cursive, "Times New Roman";
+	font-style: underline;
+}

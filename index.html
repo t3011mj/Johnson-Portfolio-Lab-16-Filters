@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+	<link href="css/Lab16.css" type="text/css" rel="stylesheet" />
+	<link href="css/animate.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body ng-app="GenerateWordsandPhrases">
+
+<h1>Generate Words and Phrases</h1>
+
+<div ng-controller="mainController">
+
+	<button id="words" 		type="button" 	ng-click="addWord()">Words</button>
+	<button id="phrases" 	type="button" 	ng-click="addPhrase()">Phrases</button>
+	<button id="decorWords" type="button" 	ng-click="addDecorWord()">Decorated Words</button>
+	<button id="decorPhrases" type="button" ng-click="addDecorPhrase()">Decorated Phrases</button>
+	<button ng-click="addAllClass()">Lots of Words</button>
+	
+	<ul>
+		<li ng-class="[item.style1, item.style2, item.style3];" ng-repeat="item in arr track by $index">{{item.text}}</li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+	<script src="js/Lab16.js"> </script>
+
+</div>
+</body>
+</html>
